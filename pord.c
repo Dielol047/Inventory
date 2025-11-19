@@ -78,7 +78,7 @@ float calcularPrecioTotal(float precios[], int numProductos) {
     return total;
 }
 
-// --- Añade esta función en inventario.c ---
+
 
 void editarProducto(char nombres[][MAX_NOMBRE], float precios[], int numProductos) {
     char nombreBuscado[MAX_NOMBRE];
@@ -88,7 +88,7 @@ void editarProducto(char nombres[][MAX_NOMBRE], float precios[], int numProducto
  
     if (numProductos == 0) {
         printf("\nNo hay productos en el inventario para editar.\n");
-        return; // Salir de la función
+        return; 
     }
 
     printf("\n--- Editar Producto ---\n");
@@ -212,4 +212,5 @@ int buscarProductoPorNombre(char nombres[][MAX_NOMBRE], char nombreBuscado[], in
         }
     }
     return -1; 
+
 }
